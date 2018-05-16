@@ -1,0 +1,153 @@
+.post-wrapper {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    margin-left: 4%;
+}
+.post {
+    margin: 10px;
+    height: 360px;
+    width: 240px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f0f2f5;
+    font-size: 14px;
+    
+    display: flex;
+    
+    flex-direction: column;
+}
+.post header {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.post-date {
+    display: -webkit-inline-box;
+    flex: 1;
+    padding-top: 10px;
+}
+.post-scores {
+    display: flex;
+    padding-left: 10px;
+}
+.post-score {
+    padding-left: 5px;
+    font-size: 10px;
+    text-align: center;
+}
+.post-score span {
+    display: block;
+}
+
+.post-background-redux {
+    background-image: url('../../images/react-redux-background.png');
+}
+
+.post-background-react {
+    background-image: url('../../images/react-background.png');
+}
+.post-background-udacity {
+    background-image: url('../../images/udacity-background.png');
+}
+.spacer {
+    height: 100px;
+    flex: 1;
+}
+.post-body {
+    background: rgba(107, 149, 175, 0.44);
+    flex: 1.5;
+    text-align: left;
+    padding: 10px;
+    height: 160px;
+}
+
+.post-body h2 {
+    margin: 0;
+}
+.post-body h3 {
+    margin: 0;
+    margin-top: 0.5em;
+    font-style: italic;
+}
+.post-body h3:first-letter {
+    text-transform: uppercase;
+}
+.post-body p {
+    margin: 0;
+    padding-top: 0.5em;
+}
+
+.post-details-link {
+    text-decoration: none;
+}
+.post-details-link:visited {
+    color: #fff;
+}
+.post-details-link:link {
+    color: #fff;    
+}
+
+.post-form-view span{
+    display: -webkit-box;
+}
+
+
+.post-details {
+    margin: 0 auto;
+    width: 1024px;
+}
+.error {
+    color: red;
+}
+
+.post-actions-wrapper {
+    position: relative;
+    text-align: right;
+    padding: 10px;
+}
+
+.post-actions {
+    position: absolute;
+    color: black;
+    text-decoration: none;
+    right: 0;
+    padding-right: 10px;
+    top: 34px;
+    width: 120px;
+    background-color: #efefef;
+}
+
+.post-actions span {
+    width: 100%;
+}
+
+.post-action-item {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.post-action-item a {
+    text-decoration: none;
+}
+
+.post-action-item:hover {
+    background-color: #ffdd;
+}
+.post-new {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+form.post-new-form {
+    padding-top: 40px;
+}
+form.post-new-form select {
+    display: -webkit-box;
+    height: 26px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

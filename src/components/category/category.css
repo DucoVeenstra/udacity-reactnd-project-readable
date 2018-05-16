@@ -1,0 +1,26 @@
+.left-menu {
+    position: absolute;
+    width: 200px;
+    background-color: #929292;
+    top: 63px;
+    height: calc(100% - 63px);
+}
+nav.filter-category {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-category-item {
+    display: flex;
+}
+
+.filter-category-item input {
+    flex: 1;
+    width: 130px;
+    margin: 0 !important;
+}
+
+.filter-category-item span {
+    flex: 1;
+    text-align: left;
+}

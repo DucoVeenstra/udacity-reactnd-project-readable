@@ -1,0 +1,78 @@
+.comment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.comment-list li {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.comment-list li:nth-child(even) {
+    background-color: #f1f1f1;
+}
+.comment-list li:nth-child(odd) {
+    background-color: #dedede
+}
+.comment-list li:nth-child(n+2) {
+    border-top: #dcdcdc solid 1px;
+}
+.comments-actions {
+    justify-items: flex-end;
+}
+.comment-date {
+    font-style: italic;
+    font-size: 15px;
+}
+.comment-body {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.comment-footer {
+    display: flex;
+    margin: 0 auto;
+}
+.comment-score {
+    border: black solid 1px;
+    border-radius: 49.5%;
+    padding: 4px;
+    width: 18px;
+    height: 16px;
+    background-color: green;
+    text-align: center;
+}
+
+.comment-score-negative {
+    background-color: red;
+}
+.comment-footer section {
+    font-size: 20px;
+}
+.comments-actions {
+    display: flex;
+    flex-direction: column;
+}
+.comments-actions svg {
+    flex: 1;
+    font-size: 24px;
+    padding-right: 10px;
+}
+
+.comments-actions svg:first-child {
+    cursor: pointer;
+}
+.comments-actions svg:nth-child(n+2) {
+    color: red;
+    cursor: pointer;
+}
+
+form {
+    overflow: hidden;
+}
