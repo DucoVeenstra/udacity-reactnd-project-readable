@@ -1,5 +1,6 @@
 import * as types from "./actionTypes";
 import * as api from '../api/index';
+import _ from 'lodash';
 
 // ACTIONS
 function fetchPostsSuccess(posts) {
@@ -70,9 +71,13 @@ export function fetchPostsByCategory(category) {
 export function fetchPost(id) {
   return dispatch => {
     return api.fetchPost(id).then(resp => {
+      // When Post is deleted the service return a empty object
+      if (_.isEmpty(resp.data)) {
+        window.location.href = '/404';
+      }
       dispatch(fetchPostSuccess(resp.data));
     }).catch(error => {
-      window.location.href = '/404';
+      
       throw(error);
     });
   }
