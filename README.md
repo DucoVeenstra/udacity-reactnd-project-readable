@@ -5,7 +5,6 @@
 
 - [Project](#project)
 - [Getting Started](#getting-started)
-  - [npm start](#npm-start)
   - [git clone](#git-clone)
   - [npm install](#npm-install)
   - [npm build](#npm-build)
